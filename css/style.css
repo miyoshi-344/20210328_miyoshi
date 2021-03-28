@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1.6;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+html,body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #00277e;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  line-height: 70px;
+}
+
+.header-logo {
+  font-size: 35px;
+  color: #00277e;
+}
+
+.header-list li{
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 35px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.first-view {
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+}
+
+.view-wrap {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  z-index: 1;
+}
+
+.view-img {
+  width: 50%;
+  margin-left: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+.message {
+  font-size: 70px;
+  color: #00277e;
+}
+
+.bule-line {
+  background-color: #000b62;
+  height: 200px;
+  width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .header-list {
+    display: none;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+    display: block;
+  }
+  .hamburger span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    transition: 0.8s;
+  }
+  .hamburger span:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+  }
+  .hamburger span:nth-of-type(2) {
+    position: absolute;
+    top: 20px;
+    left: 2px;
+  }
+  .hamburger span:nth-of-type(3) {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+  }
+
+  .view-img {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .first-view {
+    position: static;
+  }
+
+  .message {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  .bule-line {
+    width: 90%;
+    margin-top: 50px;
+  }
+}
